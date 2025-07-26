@@ -3,10 +3,10 @@
     --font-family-heading: 'Poppins', sans-serif;
     --font-family-paragraph: 'Helvetica', sans-serif;
     --font-family-monospace: monospace;
-    --base-color: #fff;
-    --base-offset-color: #eaeaea;
-    --highlight-color: #7b16ff;
-    --heading-color: #1c1b1d;
-    --text-color: #4e5157;
-    --dot-color: #7b16ff;
+    --base-color: light-dark(#fff, #1c1b1d);
+    --base-offset-color: light-dark(#eaeaea, #2a2831);
+    --highlight-color: light-dark(#7b16ff, #9d4eff);
+    --heading-color: light-dark(#1c1b1d, #fff);
+    --text-color: light-dark(#4e5157, #c4c5ca);
+    --dot-color: light-dark(#7b16ff, #9d4eff);
 }
