@@ -1,0 +1,27 @@
+html, body {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--base-color);
+  font-family: var(--font-family-paragraph);
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+  overflow-x: hidden;
+  &.frame {
+    min-height: 100vh;
+    border: 18px solid var(--highlight-color);
+  }
+}
+
+@media (min-width: 767px) {
+    body {
+        padding: 50px;
+    }
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}

@@ -1,0 +1,12 @@
+:root {
+    color-scheme: light dark;
+    --font-family-heading: 'Poppins', sans-serif;
+    --font-family-paragraph: 'Helvetica', sans-serif;
+    --font-family-monospace: monospace;
+    --base-color: #fff;
+    --base-offset-color: #eaeaea;
+    --highlight-color: #7b16ff;
+    --heading-color: #1c1b1d;
+    --text-color: #4e5157;
+    --dot-color: #7b16ff;
+}

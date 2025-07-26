@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-theme = "hugo-winston-theme"
+theme = "hugo-winston-theme-too"
 title = "Hugo Winston Theme"
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
@@ -19,7 +19,7 @@ pygmentsUseClasses = true
   showIntroContentOnHomepage = true
   showPostsOnHomepage = false
   usePaginationOnHomepage = false
-  limitPostsOnHomepage = 3 # only used if usePaginationOnHomepage is false
+  limitPostsOnHomepage = 3                                                                      # only used if usePaginationOnHomepage is false
   sortPostsByDateOldestFirst = false
   addDot = true
   addFrame = true
@@ -29,7 +29,7 @@ pygmentsUseClasses = true
   headingColor = "#1c1b1d"
   textColor = "#4e5157"
   dotColor = "#7b16ff"
-  enableGoogleFonts = true 
+  enableGoogleFonts = true
   googleFontsUrl = "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
   fontFamilyHeading = "Poppins"
   fontFamilyParagraph = "Helvetica"

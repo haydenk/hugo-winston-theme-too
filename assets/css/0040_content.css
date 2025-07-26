@@ -59,10 +59,6 @@ ul {
     &:first-of-type {
       margin-top: 0;
     }
-    @include breakpoint('small') {
-      font-size: 30px;
-      line-height: 1.4;
-    }
   }
   h3 {
     font-size: 22px;
@@ -93,12 +89,6 @@ ul {
       line-height: 20px;
       margin-bottom: 10px;
       margin-left: 0;
-      @include breakpoint('small') {
-        margin-left: 20px;
-      }
-    }
-    @include breakpoint('small') {
-      margin-left: 20px;
     }
   }
   a {
@@ -166,3 +156,17 @@ ul {
     }
   }
 }
+
+  @media (min-width: 767px) {
+    h2 {
+        font-size: 30px;
+        line-height: 1.4;
+    }
+
+    .content ul, .content ol {
+        margin-left: 20px;
+        li {
+            margin-left: 20px;
+        }
+    }
+  }

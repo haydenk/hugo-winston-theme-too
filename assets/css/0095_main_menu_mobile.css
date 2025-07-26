@@ -74,9 +74,12 @@
   height: 30px;
   display: flex;
   align-items: center;
-  @include breakpoint('medium') {
-    display: none;
-  }
+}
+
+@media (min-width: 992px) {
+    .hamburger-trigger {
+        display: none;
+    }
 }
 
 .hamburger {

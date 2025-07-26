@@ -2,9 +2,6 @@
 .menu-main {
   display: none;
   flex: 0;
-  @include breakpoint('medium') {
-    display: block;
-  }
   > ul {
     display: flex;
     align-items: center;
@@ -29,4 +26,10 @@
       }
     }
   }
+}
+
+@media (min-width: 992px) {
+    .menu-main {
+        display: block;
+    }
 }
