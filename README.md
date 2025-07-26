@@ -11,7 +11,7 @@ Hugo Winston is a bold minimal blogging theme.
 
 - Posts (Markdown)
 - Basic Page (Markdown)
-- SCSS (Hugo Pipelines)
+- Plain CSS (No need for Hugo extended)
 - Responsive design
 - 100/100 Google Lighthouse speed score
 - 100/100 Google Lighthouse SEO score
@@ -27,10 +27,6 @@ Hugo Winston is a bold minimal blogging theme.
 **1. Install Hugo**
 
 To use this theme you will first need to have Hugo installed. Please follow the official [installation guide](https://gohugo.io/getting-started/installing/)
-
-> ⚠️ **Note:** Check your Hugo version - **Hugo Extended** is required!
-
-This theme uses [Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/) to compile SCSS and minify assets which means if you are not using the Hugo extended version this theme will not work. To check your version of Hugo, run `hugo version`. Make sure you see **/extended** after the version number, for example _Hugo Static Site Generator v0.51/extended darwin/amd64 BuildDate: unknown_ You do not need to use version v0.51 specifically, it just needs to have the _/extended_ part.
 
 **2. Create a new Hugo site**
 
