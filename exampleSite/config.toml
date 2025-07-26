@@ -8,7 +8,7 @@ pygmentsUseClasses = true
 
 [module]
   [module.hugoVersion]
-    extended = true
+    extended = false
     min = "0.148.1"
 
 [params]
