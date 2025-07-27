@@ -1,5 +1,14 @@
-<a href="{{ .Destination | absURL }}"
+{{- if hugo.IsProduction -}}
+{{- $absoluteUrl := urls.JoinPath "/hugo-winston-theme-too" .Destination -}}
+<a href="{{ $absoluteUrl | absURL }}"
   {{- with .Title }} title="{{ . }}"{{ end -}}
 >
   {{- with .Text }}{{ . }}{{ end -}}
 </a>
+{{- else -}}
+<a href="{{ .Destination | safeURL }}"
+  {{- with .Title }} title="{{ . }}"{{ end -}}
+>
+  {{- with .Text }}{{ . }}{{ end -}}
+</a>
+{{- end -}}
