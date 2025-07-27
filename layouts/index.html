@@ -33,7 +33,7 @@
       {{ range first $limit $sorted}}
         {{ .Render "summary" }}
       {{ end }}
-      <a class="view-more" href="{{ (.Site.GetPage "posts").Permalink }}">More Posts</a>
+      <a class="view-more" href="{{ (.Site.GetPage "posts").RelPermalink }}">More Posts</a>
     {{ end }}
   {{ end }}
 {{ end }}
