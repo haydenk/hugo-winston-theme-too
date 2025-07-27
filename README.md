@@ -2,7 +2,7 @@
 
 Hugo Winston is a bold minimal blogging theme.
 
-[Live Demo](https://hugo-winston.netlify.app/) |
+[Live Demo](https://haydenk.github.io/hugo-winston-theme-too/) |
 [Zerostatic Themes](https://www.zerostatic.io/)
 
 ![Hugo Winston Theme screenshot](https://www.zerostatic.io/theme/hugo-winston/hugo-winston-screenshot.png)
@@ -38,22 +38,29 @@ hugo new site mynewsite
 
 **3. Install the theme**
 
-Download or git clone this theme into the sites themes folder `mynewsite/themes`. You should end up with the following folder structure `mynewsite/themes/hugo-winston-theme`
+Adding the theme as a module is the simplest way. [Check out this page](https://discourse.gohugo.io/t/how-to-add-a-theme-using-modules-for-beginners/20665) for the discussion.
 
+Essentially the staps break down as:
+
+1. Initialize your site as a hugo module if you have not done that already. 
+
+`hugo mod init yourname.github.io/sitename`
+
+
+2. Add the theme to the module imports
 ```
-cd mynewsite
-git clone https://github.com/zerostaticthemes/hugo-winston-theme.git themes/hugo-winston-theme
+[module]
+
+  [[module.imports]]
+    path = "github.com/haydenk/hugo-winston-theme-too"
+    disable=false
 ```
 
-**4. Copy the example content**
+3. To use the theme, you'll need to supply the full module name in the theme parameter.
 
-Copy the entire contents of the `mynewsite/themes/hugo-winston-theme/exampleSite/` folder to root folder of your Hugo site, ie `mynewsite/`. To copy the files using terminal, make sure you are still in the projects root, ie the `mynewsite` folder.
+`theme = "github.com/haydenk/hugo-winston-theme-too"`
 
-```
-cp -a themes/hugo-winston-theme/exampleSite/. .
-```
-
-**6. Run Hugo**
+**4. Run Hugo**
 
 After installing the theme for the first time, generate the Hugo site.
 
@@ -76,7 +83,7 @@ Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your b
 You can run this site without installing it as a hugo theme using the following command. I use this for theme development.
 
 ```
-hugo server --source=exampleSite --theme=../..
+make serve
 ```
 
 # Configuration
