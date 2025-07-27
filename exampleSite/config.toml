@@ -41,6 +41,9 @@ pygmentsUseClasses = true
 # markdown config settings https://gohugo.io/getting-started/configuration-markup/#goldmark
 [markup]
   [markup.goldmark]
+    [markup.goldmark.renderHooks]
+      [markup.goldmark.renderHooks.link]
+        useEmbedded = 'fallback'
     [markup.goldmark.renderer]
       hardWraps = false
       unsafe = true

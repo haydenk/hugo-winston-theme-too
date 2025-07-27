@@ -1,0 +1,5 @@
+<a href="{{ .Destination | absURL }}"
+  {{- with .Title }} title="{{ . }}"{{ end -}}
+>
+  {{- with .Text }}{{ . }}{{ end -}}
+</a>
