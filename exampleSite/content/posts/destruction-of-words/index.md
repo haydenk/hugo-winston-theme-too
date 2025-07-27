@@ -2,12 +2,11 @@
 title: It's a beautiful thing, the destruction of words
 date: 2018-10-30
 description: "As soon as Winston had dealt with each of the messages, he clipped his speakwritten corrections to the appropriate copy of the Times and pushed them into the pneumatic tube. "
-image: images/cctv.jpeg
-imageAltAttribute: CCTV Cameras
 tags:
    - liberty 
    - surveillance
 ---
+![CCTV Cameras](/posts/destruction-of-words/cctv.jpeg)
 
 # He moved over to the window
 
