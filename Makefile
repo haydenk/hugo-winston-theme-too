@@ -12,7 +12,7 @@ serve:
 	hugo server -D --watch --source $(source) --themesDir $(themeDir)
 
 build:
-	hugo --gc --minify -s $(source) --themesDir $(themeDir)
+	hugo --gc --minify -s $(source) --themesDir $(themeDir) --baseURL $(baseUrl)
 
 dev: clean serve
 
